@@ -8,4 +8,5 @@ export const tsup: Options = {
     clean: true,
     sourcemap: true,
     splitting: false,
+    format: "esm"
 };
