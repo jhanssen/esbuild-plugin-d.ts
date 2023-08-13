@@ -17,7 +17,7 @@
     "@types/tmp": "^0.2.3",
     "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.60.0",
-    "esbuild": "^0.18.7",
+    "esbuild": "^0.18.20",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "npm-check-updates": "^16.10.13",
@@ -28,7 +28,7 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "prepare": "yarn tsup",
+    "build": "node ./esbuild.mjs",
     "test": "cd test && node esbuild.js && cd ../",
     "testcycle": "yarn prepare && yarn test",
     "deps": "yarn ncu -u --reject chalk"
@@ -39,7 +39,6 @@
   "dependencies": {
     "chalk": "4.1.2",
     "jju": "^1.4.0",
-    "tmp": "^0.2.1",
-    "tsup": "^7.0.0"
+    "tmp": "^0.2.1"
   }
 }
